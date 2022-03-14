@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+<body>
+    <h1>Aquí tomaremos su pedido con mucho gusto...</h1> 
+
+    <form action="pedido.js">
+
+        <h2>Datos de contacto:</h2>
+
+        <label for="inputName">Denos su nombre:</label><br>
+        <input type="text" placeholder="Nombre" id="nombre" name="nombre"><br><br>
+
+        <label for="numeroTel">Teléfono:</label><br>
+        <input type="number" placeholder="Teléfono" id="teléfono" name="teléfono" maxlength="10"><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" placeholder="Correo electrónico" id="correo" name="correo"><br><br>
+
+        <p>¿Para recoger ó para entrega a domicilio?</p>
+        <input type="radio" id="pickup" name="recogeoentrega" value="pickup">
+        <label for="pickup">Recoger nuestra tienda más cercana (Pickup)</label><br>
+        <input type="radio" id="delivery" name="recogeoentrega" value="delivery">
+        <label for="delivery">Entrega a domicilio (Delivery)</label><br>
+
+        <h2>Pedido:</h2>
+
+        <label for="pedido">Escriba su pedido aquí, por favor:</label><br>
+        <input type="text" placeholder="Descripción general de su pedido" id="descriPedido" name="descriPedido" width="300px"><br> <br>
+
+        <p>Sabor(es):</p>
+
+        <input type="checkbox" id="sabor" name="sabor" value="Frambuesa">
+        <label for="Frambuesa">Frambuesa (Framboise)</label>
+        <input type="number" id="cuantos" name="frambuesaCuantos" placeholder="¿Cuántos?"><br> 
+
+        <input type="checkbox" id="sabor" name="sabor" value="Fresa">
+        <label for="Fresa">Fresa (Fraise)</label>
+        <input type="number" id="cuantos" name="fresaCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="sabor" name="sabor" value="Crema Irlandesa">
+        <label for="Crema Irlandesa">Crema Irlandesa (Crème Irlandaise)</label>
+        <input type="number" id="cuantos" name="cremaIrlandesaCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="sabor" name="sabor" value="Rompope">
+        <label for="Rompope">Rompope</label>
+        <input type="number" id="cuantos" name="rompopeCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="sabor" name="sabor" value="Tres leches">
+        <label for="Tres leches">Tres leches</label>
+        <input type="number" id="cuantos" name="treslechesCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="sabor" name="sabor" value="Mil hojas">
+        <label for="Mil hojas">Mil hojas</label>
+        <input type="number" id="cuantos" name="milhojasCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="sabor" name="sabor" value="Cheesecake de frutos rojos">
+        <label for="Cheesecake">Cheesecake de frutos rojos</label>
+        <input type="number" id="cuantos" name="cheesecakeCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="sabor" name="sabor" value="Imposible">
+        <label for="Imposible">Imposible</label>
+        <input type="number" id="cuantos" name="imposibleCuantos" placeholder="¿Cuántos?"><br><br>
+
+        <p>Adorno(s):</p>
+
+        <input type="checkbox" id="adorno" name="adorno" value="cBlanca">
+        <label for="cBlanca">Crema pastelera (Blanca)</label>
+        <input type="number" id="cuantos" name="cBlancaCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="colores">
+        <label for="colores">Crema pastelera (Gama de colores a escoger)</label>
+        <input type="number" id="cuantos" name="coloresCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="nuezTrozo">
+        <label for="nuezTrozo">Nuez en trozo</label>
+        <input type="number" id="cuantos" name="nuezTrozoCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="nuezMolida">
+        <label for="nuezMolida">Nuez molida</label>
+        <input type="number" id="cuantos" name="nuezMolidaCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="cherry">
+        <label for="cherry">Cerezas</label>
+        <input type="number" id="cuantos" name="cherryCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="frutas">
+        <label for="frutas">Frutas</label>
+        <input type="number" id="cuantos" name="frutasCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="chocoRigid">
+        <label for="chocoRigid">Cubierta de chocolate rígido</label>
+        <input type="number" id="cuantos" name="chocoRigidCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="chocoLiquid">
+        <label for="chocoLiquid">Cubierta de chocolate semi-líquido</label>
+        <input type="number" id="cuantos" name="chocoLiquidCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="confetti">
+        <label for="confetti">Confetti comestible</label>
+        <input type="number" id="cuantos" name="confettiCuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="adorno" name="adorno" value="perlas">
+        <label for="perlas">Perlas comestibles</label>
+        <input type="number" id="cuantos" name="perlasCuantos" placeholder="¿Cuántos?"><br><br>
+        
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+    </form>
+</body>
