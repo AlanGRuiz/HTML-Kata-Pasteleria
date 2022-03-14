@@ -1,3 +1,3 @@
-# HTML-Katas
+# HTML-Kata Pastelería
 
-Mis Katas de HTML para Launch X 😁
+Kata Pastelería HTML para Launch X 😁
